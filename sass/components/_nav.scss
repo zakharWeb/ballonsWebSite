@@ -1,0 +1,45 @@
+.nav{
+
+}
+.nav-list{
+    text-align: center;
+    list-style-type: none;
+    &__item{
+        display: inline-block;
+        &:not(:last-child) {
+            margin-right: 5rem;
+            @include respond(tab-land){
+                margin-right: 1.6rem;
+            }
+            @include respond(tab-port){
+                margin-right: 3rem;
+                margin-bottom: 3rem;
+            }
+            @include respond(phone){
+                margin-right: 0rem !important; 
+            }
+        }
+        @include respond(phone){
+            display: block;
+            padding: 1rem 0;
+        }
+        &:hover{
+            transform: skewY(-1);
+        }
+    }
+    &__link{
+        &:link, &:visited{
+            display: inline-block;
+            color:$color-white;
+            font-weight: 100;
+            font-size: $font-size-parag;
+            text-decoration: none;
+            letter-spacing: .2rem;
+            transition: all .3s ease;
+        }
+        &:hover{
+            transform: rotate(5deg) scale(1.2);
+            color: $color-brown-light;
+        }
+    }
+}

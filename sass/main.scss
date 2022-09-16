@@ -1,0 +1,36 @@
+// abstracts start
+@import 'abstracts/variable';
+@import 'abstracts/mixins';
+@import 'abstracts/functions';
+// abstracts end
+
+// base start
+@import 'base/base';
+@import 'base/animation';
+@import 'base/typography';
+@import 'base/utilites';
+// base end
+
+// components start
+@import 'components/navigation';
+@import 'components/button';
+@import 'components/button-text';
+@import 'components/composition';
+@import 'components/adventure-card';
+@import 'components/tour-card';
+@import 'components/feedBack-card';
+@import 'components/bg-video';
+@import 'components/form';
+@import 'components/nav';
+// components end
+
+// layout start
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+// layout end
+
+// pages start
+@import 'pages/home';
+// pages end
+
